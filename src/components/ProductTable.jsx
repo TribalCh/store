@@ -16,7 +16,7 @@ const ProductTable = () => {
         </table.Row>
         <Table.Row>
             <Table.Column> Tennis and Badminton </Table.Column>
-            <Table.Column> $55.00 </Table.Column>
+            <Table.Column> $1 </Table.Column>
         </Table.Row>
     </Table.tbody>
     </TableContainer>
