@@ -33,7 +33,11 @@ const ProductItem = (props) => {
 
 	return (
 		<Table.Row>
-			<Table.Column>{value.name}</Table.Column>
+			<Table.Column>
+				<span style={{ textDecoration: value.stock === 0 ? "line-through" : "none" }}>
+					{value.name}
+				</span>
+			</Table.Column>
 			<Table.Column>${value.price > 0 ? value.price.toFixed(2) : 0}</Table.Column>
 			<Table.Column>{value.stock}</Table.Column>
 			<Table.Column>
