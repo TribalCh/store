@@ -1,50 +1,39 @@
-import React from "react";
-
-const TableContainer = ({ Children, props }) => {
-    return <table{ ...props}>{Children}</table>;
-};
-
-const thead = ({ Children, props }) => {
-    return <thead{ ...props}>{Children}</thead>;
-};
-const tbody = ({ Children, props }) => {
-    return <tbody{ ...props}>{Children}</tbody>;
-};
-const tfoot = ({ Children, props }) => {
-    return <tfoot{ ...props}>{Children}</tfoot>;
-};
-
-const Row = ({ Children, props}) => {
-    return <tr{ ...props}>{Children}</tr>;
-};
-
-const Column = ({ Children, props}) => {
-    return <td{ ...props}>{Children}</td>;
-};
-
-const Header = ({ Children }) => {
-    return <th{ ...props}>{Children}</th>;
-};
-
-const ColumnHeader = ({ Children }) => {
-    return <ts{ ...props}>{Children}</ts>;
-};
-
-const Table = {
+const TableContainer = ({ children, props }) => {
+    return <table {...props}>{children}</table>;
+  };
+  
+  const THead = ({ children, props }) => {
+    return <thead {...props}>{children}</thead>;
+  };
+  
+  const TBody = ({ children, props }) => {
+    return <tbody {...props}>{children}</tbody>;
+  };
+  
+  const TFoot = ({ children, props }) => {
+    return <tfoot {...props}>{children}</tfoot>;
+  };
+  
+  const Row = ({ children, props }) => {
+    return <tr {...props}>{children}</tr>;
+  };
+  
+  const Column = ({ children, props }) => {
+    return <td {...props}>{children}</td>;
+  };
+  
+  const ColumnHeader = ({ children, props }) => {
+    return <th {...props}>{children}</th>;
+  };
+  
+  const Table = {
     TableContainer,
-    thead,
-    tbody,
-    tfoot,
+    THead,
+    TBody,
+    TFoot,
     Row,
     Column,
-    Header,
     ColumnHeader,
-}
-
-export default Table;
-
-/*
-    <table>
-        <thead>
-            <tr>
-/*/
+  };
+  
+  export default Table;
