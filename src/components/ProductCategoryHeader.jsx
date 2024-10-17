@@ -1,6 +1,8 @@
-import React from "react";
-import Table from "./Table";
+// ProductCategoryHeader.jsx
 
+import React from "react";
+import Table from "../Table";
+// rafce
 const ProductCategoryHeader = ({ text }) => {
   return (
     <Table.Row>
